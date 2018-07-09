@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,800');
+
+$primary: #191C24;
+$secondary: #FFD91B;
+
+body {
+	font-family: 'poppins', sans-serif;
+	font-size: 14px;
+}
+
+nav {
+	padding: 10px 0;
+	li {
+		margin: 0 10px;
+		padding: 0 15px;
+
+		a {
+			font-family: 'Poppins', sans-serif;
+			font-size: 16px;
+
+			&:hover, &:active, &.active {
+				color: $secondary;
+			}
+
+			&.btn {
+				color: #000;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+hr {margin: 10px 0;}
+
+.sidenav {
+	li{
+		color: #fff;
+
+		&.logo {margin-top: 20px;}
+		a {
+			color: white !important;
+			text-transform: capitalize;
+
+			i.material-icons {color: $secondary !important;}
+
+			&.btn {
+				color: #000 !important;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+
+			&.secondary-text {
+				color: $secondary !important;
+			}
+		}
+	}
+}
+
+.section-left {
+	background-color: #191C24;
+
+	div {
+		padding: 15px;
+		color: white;
+
+		a {
+			color: white;
+
+			i.material-icons {
+				color: $secondary;
+				margin-right: 15px;
+				font-size: 25px;
+			}
+
+			&:hover {
+				color: $secondary;
+			}
+		}
+	}
+	ul {
+		width: 100%;
+		border: none;
+
+		li {
+			a.collapsible-header {
+				background-color: transparent;
+				border: none;
+			}
+			div.collapsible-body {
+				border: none;
+
+				ul li {
+					padding: 15px 5px;
+					border-bottom: 1px solid #12171B;
+					cursor: pointer;
+
+					&:hover {
+						background-color: darken(#191C24, 1%);
+					}
+				}
+			}
+		}
+	}
+}
+
+.ads {
+	border-radius: 10px;
+	content: " ";
+	height: 160px;
+	background-color: #efefef;
+	margin-bottom: 15px;
+}
+
+.search {
+	color: black;
+	border-radius: 5px;
+	position: relative;
+
+	i.material-icons {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 10px;
+		font-size: 30px;
+	}
+
+	.search-input {
+		border: none !important;
+		box-shadow: none !important;
+		width: 80% !important;
+		margin: 5px 10px !important;
+	}
+}
+
+.table-section {
+	margin: 15px 0;
+	
+	.table-head {
+		background-color: #313445;
+		border-radius: 5px;
+		color: white;
+		padding: 16px 3px 16px 15px;
+
+		div {
+			width: 65%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			a {color: white; &:hover {color: $secondary;}}
+			span { font-size: 0.8vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+		}
+	}
+
+	.table-body {
+		margin: 15px 0;
+		padding: 15px;
+
+		thead {
+			td {color: $secondary;}
+		}
+		tbody tr:hover {
+			background-color: #313445;
+		}
+	}
+}
+
+.share {
+	margin: 15px 0;
+
+	.sl {
+		padding: 15px;
+	}
+	.links {
+		width: 65%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
+.bet-ad {
+	margin: 15px 0;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.tabs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	.tab {
+		border-radius: 5px;
+		width: 33%;
+		text-transform: capitalize;
+		position: relative;
+
+		a {
+			color: $secondary;
+			
+			&.active {
+				color: white !important;
+			}
+			&:hover {color: white !important;}
+		}
+		span {
+			position: absolute;
+			color: white;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+
+			&.l {left: 15px;}
+			&.r {right: 15px;}
+			&:hover {color: $secondary;}
+		}
+	}
+
+	li.tab:has( a.active ) {
+		background-color: #313445 !important;
+	}
+}
+
+#day, #odds {
+	margin: 15px 0px;
+
+	ul {
+		border: none;
+
+		li {
+			margin-bottom: 15px;
+
+			div.collapsible-header {
+				border: none;
+				border-radius: 3px;
+				padding: 15px;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+#day, #odds {
+	ul {
+		li {
+			div.collapsible-header {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+			div.collapsible-body {
+				padding: 0;
+				margin: 15px 0;
+				border: none;
+
+				ol {
+					margin: 15px 0;
+					width: 100%;
+					list-style: none;
+					padding: 0;
+
+					li {
+						padding: 15px;
+						margin: 1px 0;
+						border-radius: 2px;
+
+						.time {
+							font-size: 14px;
+							font-weight: 500;
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							align-items: center;
+
+							span {
+								white-space: nowrap;
+								overflow: hidden;
+								text-overflow: ellipsis;
+							}
+						}
+						.home-team span, .away-team span {
+							display: block;
+							height: 20px;
+							width: 20px;
+							margin-left: auto;
+							margin-right: auto;
+							overflow: hidden;
+							background-color: #ededed;
+							border-radius: 3px;
+						}
+						.mts {
+							p {
+								white-space: nowrap;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								margin: 0;
+
+								&.scs {
+									display: flex;
+									flex-direction: row;
+									justify-content: space-around;
+									align-items: center;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.ads {
+		height: 100px;
+	}
+	.ls {margin-top: 15px;}
+}
