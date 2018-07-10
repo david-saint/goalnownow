@@ -12,7 +12,7 @@ nav {
 	padding: 10px 0;
 	li {
 		margin: 0 10px;
-		padding: 0 15px;
+		padding: 0 12px;
 
 		a {
 			font-family: 'Poppins', sans-serif;
@@ -61,7 +61,7 @@ hr {margin: 10px 0;}
 	background-color: #191C24;
 
 	div {
-		padding: 15px;
+		padding: 12px;
 		color: white;
 
 		a {
@@ -69,7 +69,7 @@ hr {margin: 10px 0;}
 
 			i.material-icons {
 				color: $secondary;
-				margin-right: 15px;
+				margin-right: 12px;
 				font-size: 25px;
 			}
 
@@ -91,7 +91,7 @@ hr {margin: 10px 0;}
 				border: none;
 
 				ul li {
-					padding: 15px 5px;
+					padding: 12px 5px;
 					border-bottom: 1px solid #12171B;
 					cursor: pointer;
 
@@ -109,7 +109,7 @@ hr {margin: 10px 0;}
 	content: " ";
 	height: 160px;
 	background-color: #efefef;
-	margin-bottom: 15px;
+	margin-bottom: 12px;
 }
 
 .search {
@@ -134,13 +134,13 @@ hr {margin: 10px 0;}
 }
 
 .table-section {
-	margin: 15px 0;
+	margin: 12px 0;
 	
 	.table-head {
 		background-color: #313445;
 		border-radius: 5px;
 		color: white;
-		padding: 16px 3px 16px 15px;
+		padding: 16px 3px 16px 12px;
 
 		div {
 			width: 65%;
@@ -155,8 +155,8 @@ hr {margin: 10px 0;}
 	}
 
 	.table-body {
-		margin: 15px 0;
-		padding: 15px;
+		margin: 12px 0;
+		padding: 12px;
 
 		thead {
 			td {color: $secondary;}
@@ -168,10 +168,10 @@ hr {margin: 10px 0;}
 }
 
 .share {
-	margin: 15px 0;
+	margin: 12px 0;
 
 	.sl {
-		padding: 15px;
+		padding: 12px;
 	}
 	.links {
 		width: 65%;
@@ -183,7 +183,7 @@ hr {margin: 10px 0;}
 }
 
 .bet-ad {
-	margin: 15px 0;
+	margin: 12px 0;
 
 	img {
 		width: 100%;
@@ -204,6 +204,7 @@ hr {margin: 10px 0;}
 
 		a {
 			color: $secondary;
+			font-size: 12px;
 			
 			&.active {
 				color: white !important;
@@ -217,8 +218,8 @@ hr {margin: 10px 0;}
 			transform: translateY(-50%);
 			cursor: pointer;
 
-			&.l {left: 15px;}
-			&.r {right: 15px;}
+			&.l {left: 12px;}
+			&.r {right: 12px;}
 			&:hover {color: $secondary;}
 		}
 	}
@@ -229,18 +230,18 @@ hr {margin: 10px 0;}
 }
 
 #day, #odds {
-	margin: 15px 0px;
+	margin: 12px 0px;
 
 	ul {
 		border: none;
 
 		li {
-			margin-bottom: 15px;
+			margin-bottom: 12px;
 
 			div.collapsible-header {
 				border: none;
 				border-radius: 3px;
-				padding: 15px;
+				padding: 12px;
 				font-weight: 500;
 			}
 		}
@@ -257,17 +258,17 @@ hr {margin: 10px 0;}
 			}
 			div.collapsible-body {
 				padding: 0;
-				margin: 15px 0;
+				margin: 12px 0;
 				border: none;
 
 				ol {
-					margin: 15px 0;
+					margin: 12px 0;
 					width: 100%;
 					list-style: none;
 					padding: 0;
 
 					li {
-						padding: 15px;
+						padding: 12px;
 						margin: 1px 0;
 						border-radius: 2px;
 
@@ -321,5 +322,5 @@ hr {margin: 10px 0;}
 	.ads {
 		height: 100px;
 	}
-	.ls {margin-top: 15px;}
+	.ls {margin-top: 12px;}
 }
