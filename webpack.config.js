@@ -53,6 +53,12 @@ const config = {
 			title: 'Index Page',
 			hash: true,
 			template: 'src/index.html'
+		}),
+		new HtmlWebpackPlugin({
+			title: 'Login/Signup page',
+			hash: true,
+			filename: 'login.html',
+			template: 'src/login.html'
 		})
 	]
 };
