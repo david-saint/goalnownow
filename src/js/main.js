@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
 let tabs = document.querySelectorAll('.tab');
 
 tabs.forEach(value => {
-  value.addEventListener('click', function() {
-    tabs.forEach(value => value.classList.remove('lighter'));
-    this.classList.add('lighter')
+  value.addEventListener('click', function () {
+    tabs.forEach(v => v.classList.remove('lighter'));
+    this.classList.add('lighter');
   });
 });
