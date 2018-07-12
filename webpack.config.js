@@ -9,7 +9,7 @@ const config = {
 		filename: 'app.bundle.js'
 	},
 	devServer: {
-		port: 3000,
+		port: 3030,
 		open: true,
 		compress: true,
 		stats: 'minimal',

@@ -239,7 +239,7 @@ hr {margin: 10px 0;}
 	}
 }
 
-#day, #odds {
+#day, #odds, #table {
 	margin: 12px 0px;
 
 	ul {
@@ -258,7 +258,7 @@ hr {margin: 10px 0;}
 	}
 }
 
-#day, #odds {
+#day, #odds, #table {
 	ul {
 		li {
 			div.collapsible-header {
@@ -327,6 +327,35 @@ hr {margin: 10px 0;}
 		}
 	}
 }
+
+.saii {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	.saimg {margin-right: 12px;}
+}
+
+span.up {
+  width: 0; 
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+
+  border-bottom: 5px solid #00e676 ;
+}
+
+span.down {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+  
+  border-top: 5px solid #b71c1c;
+}
+
 
 @media only screen and (max-width: 600px) {
 	.ads {

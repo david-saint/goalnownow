@@ -15,3 +15,12 @@ document.addEventListener('DOMContentLoaded', function () {
   let tabs = document.querySelectorAll('.tabs');
   var tabsInstance = M.Tabs.init(tabs, {});
 });
+
+let tabs = document.querySelectorAll('.tab');
+
+tabs.forEach(value => {
+  value.addEventListener('click', function() {
+    tabs.forEach(value => value.classList.remove('lighter'));
+    this.classList.add('lighter')
+  });
+});
