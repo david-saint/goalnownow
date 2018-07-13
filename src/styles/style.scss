@@ -357,6 +357,30 @@ span.down {
   border-top: 5px solid #b71c1c;
 }
 
+span.good {
+	height: 15px;
+	width: 2px;
+	background-color: #00e676;
+	float: right;
+	display: block;
+}
+
+span.med {
+	height: 15px;
+	width: 2px;
+	background-color: $secondary;
+	float: right;
+	display: block;
+}
+
+span.bad {
+	height: 15px;
+	width: 2px;
+	background-color: #b71c1c;
+	float: right;
+	display: block;
+}
+
 .login {
 	padding: 50px 0;
 	min-height: 80vh;
