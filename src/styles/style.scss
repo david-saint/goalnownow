@@ -357,6 +357,38 @@ span.down {
   border-top: 5px solid #b71c1c;
 }
 
+.login {
+	padding: 50px 0;
+	min-height: 80vh;
+}
+
+.credentials {
+	.tabs {
+		height: 52px;
+
+		.tab {
+			line-height: 54px;
+			height: 56px;
+
+			a {
+				font-weight: 600;
+				color: white;
+				text-transform: uppercase;
+				background-color: #313445;
+				letter-spacing: 1px;
+				font-size: 14px;
+
+				&.active {
+					background-color: $secondary;
+					color: #333333 !important;
+				}
+			}
+			
+
+
+		}
+	}
+}
 
 @media only screen and (max-width: 600px) {
 	.ads {
