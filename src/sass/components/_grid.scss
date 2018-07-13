@@ -10,6 +10,11 @@
 }
 @media #{$large-and-up} {
   .container {
+    width: 90%;
+  }
+}
+@media #{$extra-large-and-up} {
+  .container {
     width: 85%;
   }
 }
