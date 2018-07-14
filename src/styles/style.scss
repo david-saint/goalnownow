@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,800');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,800');
 
 $primary: #191C24;
 $secondary: #FFD91B;
@@ -407,16 +407,113 @@ span.bad {
 					color: #333333 !important;
 				}
 			}
-			
+		}
+	}
 
+	#test2, #test1 {
+		.inp {
+			padding: 50px 0;
+		}
+		p {
+			margin: 20px 0;
+			font-weight: 600;
 
+			&.flow-text {
+				font-weight: 200;
+			}
+		}
+		.form-div {
+			margin: 35px auto 10px auto;
+
+			label {
+				font-size: 14px !important;
+				font-weight: 600;
+			}
+			input.input-des {
+				background-color: #fff;
+				border-radius: 5px;
+				margin: 10px 0;
+				padding: 0 15px;
+				border: 1px solid #101519;
+				color: #000000;
+				width: 100% !important;
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+    			-moz-box-sizing: border-box; 
+			}
+			span {
+				font-weight: 400;
+				font-size: 12px;
+			}
+			a.btn {
+				width: 100%;
+				text-align: center;
+				margin-top: 10px;
+				font-weight: 600;
+				height: 42px;
+				line-height: 42px;
+				font-size: 18px;
+				border-radius: 5px;
+
+				&.facebook {
+					background-color: #385185;
+					text-transform: capitalize;
+				}
+
+				&.google {
+					background-color: #DC4E41;
+					text-transform: capitalize;
+				}
+
+				span {
+					display: inline-flex;
+					margin-right: 7px; 
+				}
+			}
 		}
 	}
 }
+li.indicator { background-color: transparent !important;}
 
 @media only screen and (max-width: 600px) {
 	.ads {
 		height: 100px;
 	}
 	.ls {margin-top: 12px;}
+
+	.login {
+		padding: 0;
+		position: relative;
+	}
+	.credentials {
+		position: absolute !important;
+		top: -10px;
+		padding: 0 !important;
+		margin: 0;
+
+		.t-cont {
+			width: 100vw !important;
+			padding: 0 !important;
+			margin-left: -10px !important;
+
+			.tabs {
+				.tab {
+					a {
+						background-color: #101519;
+						&.active {
+							background-color: $secondary;
+							color: #333333 !important;
+						}
+					}
+				}
+			}
+		}
+
+		#test1, #test2 {
+			.inp {
+				padding: 10px 0;
+				background-color: transparent !important;
+			}
+		}
+	}
 }
