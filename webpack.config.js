@@ -59,6 +59,12 @@ const config = {
 			hash: true,
 			filename: 'login.html',
 			template: 'src/login.html'
+		}),
+		new HtmlWebpackPlugin({
+			title: 'Single Match Page',
+			hash: true,
+			filename: 'single.html',
+			template: 'src/single.html'
 		})
 	]
 };
