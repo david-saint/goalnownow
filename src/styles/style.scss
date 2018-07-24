@@ -9,9 +9,9 @@ body {
 }
 
 nav {
-	padding: 10px 0;
+	padding: 5px 0;
 	li {
-		margin: 0 10px;
+		margin: 0 5px;
 		padding: 0 12px;
 
 		a {
@@ -32,7 +32,7 @@ nav {
 	}
 }
 
-hr {margin: 10px 0;}
+hr {margin: 5px 0;}
 
 .sidenav {
 	li{
@@ -108,11 +108,15 @@ hr {margin: 10px 0;}
 		}
 	}
 }
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .ads {
-	border-radius: 10px;
+	border-radius: 5px;
 	content: " ";
-	height: 160px;
+	height: 90px;
 	background-color: #efefef;
 	margin-bottom: 12px;
 }
@@ -127,7 +131,7 @@ hr {margin: 10px 0;}
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		right: 10px;
+		right: 5px;
 		font-size: 30px;
 	}
 
@@ -135,7 +139,7 @@ hr {margin: 10px 0;}
 		border: none !important;
 		box-shadow: none !important;
 		width: 80% !important;
-		margin: 5px 10px !important;
+		margin: 5px 5px !important;
 		height: 2rem !important;
 		font-size: 12px !important;
 	}
@@ -279,7 +283,7 @@ hr {margin: 10px 0;}
 					padding: 0;
 
 					li {
-						padding: 12px;
+						padding: 5px;
 						margin: 1px 0;
 						border-radius: 2px;
 
@@ -417,7 +421,7 @@ hr {margin: 10px 0;}
 							color: #fff;
 
 							p span {
-								margin: 0 10px;
+								margin: 0 5px;
 							}
 						}
 					}
@@ -454,11 +458,22 @@ hr {margin: 10px 0;}
 				}
 
 				.tst {
-					margin-bottom: 10px;
+					margin-bottom: 12px;
 					.ss {margin-right: 8px;}
 					.sa {margin-left: 8px;}
 				}
 			}
+		}
+	}
+}
+h5.sa {line-height: 1; font-size: 12px; margin: 5px 0;}
+
+.substitution, .additional-info {
+	.collapsible {
+		margin-top: 10px;
+
+		.collapsible-body {
+			margin-top: 12px;
 		}
 	}
 }
@@ -496,7 +511,70 @@ hr {margin: 10px 0;}
 		}
 	}
 }
+.team {
+	height: 20px;
+	width: 20px;
+	background-color: #ededed;
+	border-radius: 3px;
+	overflow: hidden;
+}
+#lineUp {
+	table {
+		tbody {
+			tr {
+				td {
+					color: #ffffff;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
 
+					&.goal {
+						display: flex;
+						align-items: center;
+						justify-content: space-around;
+					}
+				}
+			}
+		}
+	}
+
+	.formation {
+		position: relative;
+		margin-bottom: 12px;
+
+		.sides {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+
+			.a, .b {
+				height: 100%;
+				width: 50%;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: stretch;
+				align-items: center;
+
+				div { 
+					width: 20%;
+					height: 100%;
+					display: flex;
+					flex-direction: column; 
+					justify-content: space-evenly;
+					align-items:center;
+				}
+			}
+		}
+	}
+}
+
+td, th {
+	padding: 5px 5px;
+}
 
 .saii {
 	display: flex;
@@ -592,7 +670,7 @@ span.bad {
 			}
 		}
 		.form-div {
-			margin: 35px auto 10px auto;
+			margin: 35px auto 5px auto;
 
 			label {
 				font-size: 14px !important;
@@ -601,7 +679,7 @@ span.bad {
 			input.input-des {
 				background-color: #fff;
 				border-radius: 5px;
-				margin: 10px 0;
+				margin: 5px 0;
 				padding: 0 15px;
 				border: 1px solid #101519;
 				color: #000000;
@@ -617,7 +695,7 @@ span.bad {
 			a.btn {
 				width: 100%;
 				text-align: center;
-				margin-top: 10px;
+				margin-top: 5px;
 				font-weight: 600;
 				height: 42px;
 				line-height: 42px;
@@ -656,14 +734,14 @@ li.indicator { background-color: transparent !important;}
 	}
 	.credentials {
 		position: absolute !important;
-		top: -10px;
+		top: -5px;
 		padding: 0 !important;
 		margin: 0;
 
 		.t-cont {
 			width: 100vw !important;
 			padding: 0 !important;
-			margin-left: -10px !important;
+			margin-left: -5px !important;
 
 			.tabs {
 				.tab {
@@ -680,7 +758,7 @@ li.indicator { background-color: transparent !important;}
 
 		#test1, #test2 {
 			.inp {
-				padding: 10px 0;
+				padding: 5px 0;
 				background-color: transparent !important;
 			}
 		}
