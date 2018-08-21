@@ -203,6 +203,18 @@ hr {margin: 5px 0;}
 	}
 }
 
+.dayList {
+	margin-bottom: 12px;
+	a {
+		border-radius: 3px;
+		font-weight: 500;
+		font-size: 11px;
+		width: 100%;
+	}
+	.cs {padding: 0 2px !important;}
+
+}
+
 .tabs {
 	display: flex;
 	flex-direction: row;
@@ -211,10 +223,11 @@ hr {margin: 5px 0;}
 	
 	.tab {
 		border-radius: 5px;
-		width: 33%;
+		width: 50%;
 		text-transform: capitalize;
 		position: relative;
 		line-height: 46px;
+		margin: 0 5px;
 
 		a {
 			color: $secondary;
