@@ -121,6 +121,142 @@ hr {margin: 5px 0;}
 	margin-bottom: 12px;
 }
 
+/* Changed content */
+.flash {
+	.image {
+		position: relative;
+		width: 100%;
+		height: auto;
+		border-radius: 2px 2px 0px 0px;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+
+		img { width: 100%; height: auto; }
+		.content {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			height: 100%;
+			width: 100%;
+			background: linear-gradient(0deg, rgba(51, 51, 51, 0.2), rgba(51, 51, 51, 0.2)), linear-gradient(180.1deg, rgba(0, 0, 0, 0) 77.07%, rgba(0, 0, 0, 0.7) 99.89%);
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: flex-end;
+
+			div {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+				margin: 5px;
+
+				span.tag {
+					background-color: #EF2339;
+					border-radius: 2px;
+					padding: 2px 5px;
+					font-size: 10px;
+					font-weight: 800;
+					text-transform: capitalize;
+					line-height: normal;
+					color: white;
+					display: block;
+				}
+				a {
+					color: white;
+					font-size: 20px;
+					font-weight: 800;
+					line-height: normal;
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+	.more-news {
+		border-radius: 0px 0px 2px 2px;
+		padding: 8px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin-bottom: 8px;
+		overflow: hidden;
+
+		.new {
+			border-left: 1px solid #EF2339;
+			padding: 0 8px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+
+			.tag {
+				color: rgba(255, 255, 255, 0.5);
+				font-size: 8px;
+				font-weight: 800;
+				text-transform: capitalize;
+			}
+			a {
+				font-size: 9px;
+				color: #ffffff;
+				font-weight: 800;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+
+.search {
+	margin-bottom: 10px !important;
+}
+
+.predict {
+	margin: 12px 0;
+
+	.hd {
+		padding: 12px;
+		color: #333333;
+		text-transform: capitalize;
+		border-radius: 2px;
+		font-weight: 600;
+	}
+
+	.bd {
+		margin: 12px 0;
+		padding: 12px;
+		border-radius: 2px;
+
+		.inp {
+			margin: 10px 0;
+			width: 100%;
+
+			label {
+				font-size: 12px;
+				color: #FFD91B;
+				font-weight: 500;
+				letter-spacing: 0.03;
+				text-transform: capitalize;
+			}
+			input {
+				width: 100%;
+				margin: 5px 0;
+				border: 1px solid #BDBDBD;
+				border-radius: 4px;
+				background-color: #fff;
+				box-shadow: none !important;
+				padding: 8px;
+				font-size: 11px;
+				height: 35px;
+				box-sizing: border-box;
+
+				&:focus { border: 1px solid #BDBDBD;}
+			}
+		}
+	}	
+}
+/* end Changed content */
+
 .search {
 	color: black;
 	border-radius: 5px;
@@ -735,6 +871,63 @@ span.bad {
 }
 li.indicator { background-color: transparent !important;}
 
+/* changed content */
+
+.static-ads {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 56px;
+	background-color: rgba(238, 238, 238, 0.6);
+	content: " ";
+	border-bottom: 2px solid #FFD91B;
+
+	.more-news {
+		border-radius: 0px 0px 2px 2px;
+		padding: 8px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin-bottom: 8px;
+		overflow: hidden;
+
+		.new {
+			border-left: 1px solid #EF2339;
+			padding: 0 8px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+
+			.tag {
+				color: rgba(255, 255, 255, 0.5);
+				font-size: 8px;
+				font-weight: 800;
+				text-transform: capitalize;
+			}
+			a {
+				font-size: 9px;
+				color: #ffffff;
+				font-weight: 800;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+
+.table-section .table-head { border-radius: 2px !important;}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+/* end changed content */
+
 @media only screen and (max-width: 600px) {
 	.ads {
 		height: 100px;
@@ -779,4 +972,13 @@ li.indicator { background-color: transparent !important;}
 	.s-left-align {
 		text-align: left !important;
 	}
+	/* Changed content */
+	#day ul li div.collapsible-body ol li .mts p {
+		padding: 3px;
+		&:first-child {
+			border-bottom: 1px solid #101519;
+		}
+	}
+	.search { margin-bottom: 0px !important;}
+	/* end changed content */
 }
