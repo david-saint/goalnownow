@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let tabs = document.querySelectorAll('.tabs');
   var tabsInstance = M.Tabs.init(tabs, {});
+
+  var modal = document.querySelectorAll('.modal');
+  var modInstance = M.Modal.init(modal, {});
 });
 
 let tabs = document.querySelectorAll('.tab');
