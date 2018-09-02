@@ -28,7 +28,7 @@ tabs.forEach(value => {
   });
 });
 
-var smawu = document.getElementById('smawu');
+const smawu = document.getElementById('smawu');
 smawu.addEventListener('click', function () {
   document.getElementById('s56').classList.toggle('hide');
 });
