@@ -17,6 +17,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var modal = document.querySelectorAll('.modal');
   var modInstance = M.Modal.init(modal, {});
+
+  /* Slider for flash news section */
+  function moveToNextSlide() {
+
+    var newsList = document.querySelectorAll('.g-news .more-news');
+    var activeNews = null;
+    var activeIndex = null;
+
+    Array.from(newsList).forEach(( node, index) => {
+      if (node.classList.contains('active'))
+        activeNews = node, activeIndex = index;
+    });
+
+    newsList[newsList.length-1].after(newsList[0]);
+
+    activeNews.classList.remove('active');
+    newsList[activeIndex+1].classList.add('active');
+
+    setTimeout(function () {
+      moveToNextSlide();
+    }, 20000);
+  }
+
+  moveToNextSlide();
+
 });
 
 let tabs = document.querySelectorAll('.tab');
