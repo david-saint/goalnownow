@@ -31,10 +31,12 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-    newsList[newsList.length - 1].after(newsList[0]);
-
     activeNews.classList.remove('active');
     newsList[activeIndex + 1].classList.add('active');
+
+    setTimeout(function () {
+      newsList[newsList.length - 1].after(newsList[0]);
+    }, 1000);
 
     setTimeout(function () {
       moveToNextSlide();
@@ -42,6 +44,35 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   moveToNextSlide();
+  /* slider in flash section */
+
+  /* Slider for static  section */
+  function moveToNextSlideS() {
+    var snewsList = document.querySelectorAll('.s-news .more-news');
+    var sactiveNews = null;
+    var sactiveIndex = null;
+
+    Array.from(snewsList).forEach((node, index) => {
+      if (node.classList.contains('active')) {
+        sactiveNews = node;
+        sactiveIndex = index;
+      }
+    });
+
+    sactiveNews.classList.remove('active');
+    snewsList[sactiveIndex + 1].classList.add('active');
+
+    setTimeout(function () {
+      snewsList[snewsList.length - 1].after(snewsList[0]);
+    }, 1000);
+
+    setTimeout(function () {
+      moveToNextSlideS();
+    }, 20000);
+  }
+
+  moveToNextSlideS();
+  /* slider in static section */
 });
 
 let tabs = document.querySelectorAll('.tab');

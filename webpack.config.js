@@ -65,6 +65,12 @@ const config = {
 			hash: true,
 			filename: 'single.html',
 			template: 'src/single.html'
+		}),
+		new HtmlWebpackPlugin({
+			title: 'Admin Dashboard Page',
+			hash: true,
+			filename: 'admin.html',
+			template: 'src/admin.html'
 		})
 	]
 };
