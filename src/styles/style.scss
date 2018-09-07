@@ -1102,7 +1102,9 @@ li.indicator { background-color: transparent !important;}
 .table-section .table-head { border-radius: 2px !important;}
 
 input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-moz-inner-spin-button, 
+input[type=number]::-moz-outer-spin-button  { 
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
