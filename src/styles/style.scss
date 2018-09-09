@@ -197,7 +197,7 @@ hr {margin: 5px 0;}
 		width: 100%;
 		position: relative;
 		overflow: hidden;
-		height: 150px;
+		height: auto;
 		padding: 0;
 	}
 	.img-c {
@@ -206,12 +206,15 @@ hr {margin: 5px 0;}
 		position: absolute;
 		transition: transform 1s ease-in-out;
 		transform: translate(-100%, 0);
+		position: absolute;
 
 		&.active {
 			transform: translate(0, 0);
+			position: relative;
 
 			~ .img-c {
 				transform: translate(100%, 0);
+				position: absolute;
 			}
 		}
 	}
