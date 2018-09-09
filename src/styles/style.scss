@@ -360,6 +360,7 @@ hr {margin: 5px 0;}
 }
 
 .admin {
+	margin: 20px auto;
 	.row {
 		border-radius: 2px;
 
@@ -372,6 +373,42 @@ hr {margin: 5px 0;}
 			color: white;
 			text-transform: capitalize;
 			font-weight: 600;
+			margin-bottom: 20px;
+		}
+		.match {
+			margin: 20px 0;
+			.times {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+			}
+			img {
+				margin-right: 10px;
+			}
+		}
+		.mc {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0;
+
+			input[type=text] {
+				width: 60%;
+				background-color: #FCFCFD;
+				border: 0.85877px solid #ECF0F3;
+				box-sizing: border-box;
+				border-radius: 4.48435px;
+				padding: 12px;
+				font-weight: 600;
+				color: #6C7286;
+				font-size: 12px;
+				margin-right: 10px
+			}
+			input[type=file] {
+				width: 40%;
+			}
 		}
 	}
 }
