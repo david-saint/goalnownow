@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
   moveToNextSlide();
 
   setInterval(function () {
-    var prog = document.getElementById("img-next");
-    i = i + 5;
+    var prog = document.getElementById('img-next');
+    i += 5;
     prog.style.width = `${i}%`;
   }, 1000);
   /* slider in flash section */
