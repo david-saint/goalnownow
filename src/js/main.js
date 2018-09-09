@@ -18,9 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
   var modal = document.querySelectorAll('.modal');
   var modInstance = M.Modal.init(modal, {});
 
+
+  var i = 0;
+
   /* Slider for flash news section */
   function moveToNextSlide() {
-    var newsList = document.querySelectorAll('.g-news .more-news');
+    var newsList = document.querySelectorAll('.g-image .img-c');
     var activeNews = null;
     var activeIndex = null;
 
@@ -39,11 +42,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 1000);
 
     setTimeout(function () {
+      i = 0;
       moveToNextSlide();
     }, 20000);
   }
 
   moveToNextSlide();
+
+  setInterval(function () {
+    var prog = document.getElementById("img-next");
+    i = i + 5;
+    prog.style.width = `${i}%`;
+  }, 1000);
   /* slider in flash section */
 
   /* Slider for static  section */

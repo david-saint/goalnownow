@@ -121,7 +121,10 @@ hr {margin: 5px 0;}
 	margin-bottom: 12px;
 }
 
+/** Changing content */
 .flash {
+	padding: 0 !important;
+
 	.image {
 		position: relative;
 		width: 100%;
@@ -144,6 +147,7 @@ hr {margin: 5px 0;}
 			flex-direction: row;
 			justify-content: space-evenly;
 			align-items: flex-end;
+			padding: 0 !important;
 
 			div {
 				display: flex;
@@ -151,6 +155,7 @@ hr {margin: 5px 0;}
 				justify-content: space-between;
 				align-items: flex-start;
 				margin: 5px;
+				padding: 0;
 
 				span.tag {
 					background-color: #EF2339;
@@ -173,11 +178,42 @@ hr {margin: 5px 0;}
 			}
 		}
 	}
+	.progress {
+		padding: 0 !important;
+		margin: 0 0 12px 0;
+		height: 3px;
+		.determinate {
+			padding: 0 !important;
+			transition: width 1s linear;
+		}
+	}
 	.g-news {
 		width: 100%;
 		height: 62px;
 		position: relative;
 		overflow: hidden;
+	}
+	.g-image {
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		height: 150px;
+		padding: 0;
+	}
+	.img-c {
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		transition: transform 1s ease-in-out;
+		transform: translate(-100%, 0);
+
+		&.active {
+			transform: translate(0, 0);
+
+			~ .img-c {
+				transform: translate(100%, 0);
+			}
+		}
 	}
 	.more-news {
 		border-radius: 0px 0px 2px 2px;
@@ -224,6 +260,7 @@ hr {margin: 5px 0;}
 		}
 	}
 }
+/** End changing content */
 
 .search {
 	margin-bottom: 10px !important;
@@ -1102,13 +1139,15 @@ li.indicator { background-color: transparent !important;}
 .table-section .table-head { border-radius: 2px !important;}
 
 input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-moz-inner-spin-button, 
-input[type=number]::-moz-outer-spin-button  { 
+input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }
 
 footer {
