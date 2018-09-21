@@ -83,6 +83,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   moveToNextSlideS();
   /* slider in static section */
+  const smawu = document.getElementById('smawu');
+  smawu.addEventListener('click', function () {
+    document.getElementById('s56').classList.toggle('hide');
+  });
 });
 
 let tabs = document.querySelectorAll('.tab');
@@ -92,9 +96,4 @@ tabs.forEach(value => {
     tabs.forEach(v => v.classList.remove('lighter'));
     this.classList.add('lighter');
   });
-});
-
-const smawu = document.getElementById('smawu');
-smawu.addEventListener('click', function () {
-  document.getElementById('s56').classList.toggle('hide');
 });
